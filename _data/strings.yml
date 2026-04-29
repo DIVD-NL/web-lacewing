@@ -126,7 +126,7 @@ en:
   context_body: |
     On April 7, 2026, Anthropic launched <strong>Project Glasswing</strong> — a large-scale initiative using AI to find and fix vulnerabilities in critical software. Sounds great. And it is, partly.
     <br><br>
-    But look who's at the table: Amazon, Apple, Microsoft, Google, NVIDIA, JPMorgan, Cisco — and the Linux Foundation. The decisions about <em>what</em> gets found, <em>what</em> gets fixed, and <em>who</em> benefits are largely in the hands of a small group of American tech companies and investors. After the preview period, access to the underlying model costs $25–$125 per million tokens.
+    But look who's at the table: Amazon, Apple, Microsoft, Google, NVIDIA, JPMorgan, Cisco — and the Linux Foundation. The decisions about <em>what</em> gets investigated, <em>what</em> gets fixed, and <em>who</em> benefits are largely in the hands of a small group of American tech companies and investors. After the preview period, access to the underlying model costs $25–$125 per million tokens.
   context_quote: "If Europe leaves this to others, Europe loses its voice in the security of its own digital infrastructure."
   context_quote_attribution: "— From the Project Lacewing pitch"
   context_divd_intro: "DIVD has something no Glasswing partner has:"
@@ -172,7 +172,7 @@ en:
   contribute_id: "get-involved"
   contribute_label: "Get involved"
   contribute_h2: "What we need"
-  contribute_intro: "This project asks something DIVD has rarely done before: actively raise money. But the alternative is watching others set the standard for how AI is used in cybersecurity."
+  contribute_intro: "This project cannot succeed without substantial funding — on a scale DIVD has not been able to reach before, because running and training AI models is not cheap. But the alternative is watching others set the standard."
   contribute_card1_title: "Technical"
   contribute_card1_body: "Help think through the technical setup: which models, which hardware, which targets."
   contribute_card1_cta: "Sign up"

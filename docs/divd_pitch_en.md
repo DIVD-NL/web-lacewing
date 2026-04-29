@@ -36,7 +36,7 @@ If we do nothing, the answer in two years will be: a handful of American compani
 
 ## What we need
 
-This project asks something DIVD has rarely done before: **actively raise money.** That's a big step. But the alternative is watching others set the standard for how AI is used in cybersecurity — and having no seat at that table.
+This project cannot succeed without substantial funding — on a scale DIVD has not been able to reach before, because running and training AI models is not cheap. But the alternative is watching others set the standard.
 
 We're looking for people within DIVD who want to:
 - Help think through the **technical setup** (which models, which hardware, which targets)
