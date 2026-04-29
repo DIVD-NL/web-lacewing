@@ -1,0 +1,22 @@
+{% assign _lang = page.lang | default: 'nl' %}{% assign s = site.data.strings[_lang] %}
+<section class="section section--white" id="{{ s.context_id }}" aria-labelledby="context-h2">
+  <div class="container">
+    <p class="section-label">{{ s.context_label }}</p>
+    <h2 class="section-h2" id="context-h2">{{ s.context_h2 }}</h2>
+    <div class="context-grid">
+      <div class="context-body">
+        <p>{{ s.context_body }}</p>
+        <p class="context-divd-track">
+          <strong>{{ s.context_divd_intro }}</strong>
+          {{ s.context_divd_track }}
+        </p>
+      </div>
+      <aside class="context-quote-block">
+        <blockquote class="pull-quote">
+          <p>{{ s.context_quote }}</p>
+          <footer>{{ s.context_quote_attribution }}</footer>
+        </blockquote>
+      </aside>
+    </div>
+  </div>
+</section>

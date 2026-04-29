@@ -1,0 +1,18 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1a3157">
+
+  <!-- jekyll-seo-tag handles title, description, og:*, twitter:* -->
+  {% seo %}
+
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <link rel="icon" type="image/svg+xml" href="{{ '/assets/img/lacewing-logo.svg' | relative_url }}">
+
+  <!-- Canonical + hreflang -->
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  {% if page.lang_alt_url %}
+  <link rel="alternate" hreflang="{{ page.lang | default: 'nl' }}" href="{{ page.url | absolute_url }}">
+  <link rel="alternate" hreflang="{% if page.lang == 'en' %}nl{% else %}en{% endif %}" href="{{ page.lang_alt_url | absolute_url }}">
+  {% endif %}
+</head>

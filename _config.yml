@@ -1,0 +1,42 @@
+title: "Project Lacewing"
+description: "Een Europees, open, community-gedreven antwoord op AI-kwetsbaarheidsonderzoek. Door DIVD."
+baseurl: ""
+url: ""
+
+livereload: true
+
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+exclude:
+  - docs/
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - .github/
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: "en"
+    values:
+      layout: "page"
+      lang: "en"
+  - scope:
+      path: ""
+    values:
+      layout: "page"
+      lang: "nl"
+
+twitter:
+  username: DIVDnl
+
+lacewing:
+  contact_email: "lacewing@divd.nl"
+  github_url: "https://github.com/DIVD-NL"
+  donate_url: "https://divd.nl/donate"

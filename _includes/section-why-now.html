@@ -1,0 +1,14 @@
+{% assign _lang = page.lang | default: 'nl' %}{% assign s = site.data.strings[_lang] %}
+<section class="section section--white" id="{{ s.why_id }}" aria-labelledby="why-h2">
+  <div class="container container--narrow">
+    <p class="section-label">{{ s.why_label }}</p>
+    <h2 class="section-h2" id="why-h2">{{ s.why_h2 }}</h2>
+    <div class="why-body">
+      <p>{{ s.why_body }}</p>
+    </div>
+    <blockquote class="why-quote">
+      <p>{{ s.why_quote }}</p>
+    </blockquote>
+    <p class="why-conclusion">{{ s.why_conclusion }}</p>
+  </div>
+</section>
