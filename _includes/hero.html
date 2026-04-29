@@ -1,7 +1,10 @@
 {% assign _lang = page.lang | default: 'nl' %}{% assign s = site.data.strings[_lang] %}
 <section class="hero" aria-labelledby="hero-headline">
   <div class="container hero-inner">
-    <p class="hero-label">{{ s.hero_label }}</p>
+    <p class="hero-label">
+      <span class="hero-label__text">{{ s.hero_label }}</span>
+      <img src="{{ '/assets/img/divd-logo.svg' | relative_url }}" alt="DIVD" class="hero-label__logo" height="20" width="40">
+    </p>
     <h1 class="hero-headline" id="hero-headline">{{ s.hero_headline }}</h1>
     <p class="hero-sub">{{ s.hero_sub }}</p>
     <div class="hero-ctas">

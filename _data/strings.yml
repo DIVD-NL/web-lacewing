@@ -9,7 +9,7 @@ nl:
   nav_mobile_toggle: "Menu"
 
   # Hero
-  hero_label: "Een initiatief van DIVD"
+  hero_label: "Een initiatief van"
   hero_headline: "Het internet is van iedereen. De verdediging ook."
   hero_sub: "Project Lacewing is het Europese, open antwoord op AI-gedreven kwetsbaarheidsonderzoek — door DIVD, transparant en non-profit."
   hero_cta_primary: "Doe mee"
@@ -110,7 +110,7 @@ en:
   nav_mobile_toggle: "Menu"
 
   # Hero
-  hero_label: "A DIVD initiative"
+  hero_label: "An initiative by"
   hero_headline: "The internet belongs to everyone. So does its defense."
   hero_sub: "Project Lacewing is the European, open answer to AI-driven vulnerability research — by DIVD, transparent and non-profit."
   hero_cta_primary: "Get involved"
