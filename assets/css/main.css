@@ -61,7 +61,7 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background-image: url('/assets/img/lacewing-logo.svg');
+  background-image: url('../img/lacewing-logo.svg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 70vmin;

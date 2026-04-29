@@ -6,7 +6,7 @@ cd "$(dirname "$0")"
 JEKYLL_PID=""
 
 start_jekyll() {
-  bundle exec jekyll serve --port 4000 --incremental &
+  bundle exec jekyll serve --port 4000 --incremental --baseurl "" &
   JEKYLL_PID=$!
 }
 

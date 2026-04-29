@@ -1,7 +1,7 @@
 title: "Project Lacewing"
 description: "Een Europees, open, community-gedreven antwoord op AI-kwetsbaarheidsonderzoek. Door DIVD."
-baseurl: ""
-url: ""
+baseurl: "/web-lacewing"
+url: "https://divd-nl.github.io"
 
 livereload: true
 
