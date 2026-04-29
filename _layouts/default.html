@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'nl' }}">
+{% include head.html %}
+<body class="{{ page.body_class }}">
+  <a class="skip-link" href="#main-content">{% if page.lang == 'en' %}Skip to main content{% else %}Naar hoofdinhoud{% endif %}</a>
+  {% include header.html %}
+  <div id="main-content">
+    {{ content }}
+  </div>
+  {% include footer.html %}
+  <script src="{{ '/assets/js/main.js' | relative_url }}" defer></script>
+</body>
+</html>

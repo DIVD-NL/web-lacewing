@@ -1,0 +1,3 @@
+# Placeholder — add partner logos as the project grows
+# Each entry: name, url, logo (path under assets/img/partners/)
+partners: []

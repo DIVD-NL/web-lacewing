@@ -1,0 +1,13 @@
+{% assign _lang = page.lang | default: 'nl' %}{% assign s = site.data.strings[_lang] %}
+<section class="hero" aria-labelledby="hero-headline">
+  <div class="container hero-inner">
+    <p class="hero-label">{{ s.hero_label }}</p>
+    <h1 class="hero-headline" id="hero-headline">{{ s.hero_headline }}</h1>
+    <p class="hero-sub">{{ s.hero_sub }}</p>
+    <div class="hero-ctas">
+      <a href="{{ s.hero_cta_primary_url }}" class="btn btn--primary">{{ s.hero_cta_primary }}</a>
+      <a href="{{ s.hero_cta_secondary_url }}" class="btn btn--outline">{{ s.hero_cta_secondary }}</a>
+    </div>
+    <p class="hero-tagline">{{ s.hero_tagline }}</p>
+  </div>
+</section>
