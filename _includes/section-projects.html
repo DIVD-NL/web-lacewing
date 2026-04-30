@@ -1,0 +1,30 @@
+{% if site.projects.size > 0 %}
+<section class="section section--white" id="projects" aria-labelledby="projects-h2">
+  <div class="container">
+    <p class="section-label">What we're doing</p>
+    <h2 class="section-h2" id="projects-h2">Sub-projects</h2>
+    <p class="section-intro">Project Lacewing is made up of focused sub-projects, each with a defined scope and timeline. Together they form the roadmap from initiation to operational AI-driven vulnerability research.</p>
+
+    <div class="projects-grid">
+      {% for project in site.projects %}
+      <div class="project-card">
+        <div class="project-card__header">
+          <span class="project-status project-status--{{ project.status }}">{{ project.status | capitalize }}</span>
+          <span class="project-dates">
+            {% if project.start_date %}
+              {{ project.start_date | date: "%-d %b %Y" }}{% if project.end_date %} – {{ project.end_date | date: "%-d %b %Y" }}{% else %} – ongoing{% endif %}
+            {% else %}
+              TBD
+            {% endif %}
+          </span>
+        </div>
+        <h3 class="project-card__title">{{ project.title }}</h3>
+        {% if project.description %}
+        <p class="project-card__description">{{ project.description }}</p>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
