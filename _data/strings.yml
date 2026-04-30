@@ -2,6 +2,8 @@ nl:
   # Navigation
   nav_context: "Achtergrond"
   nav_why_now: "Waarom nu"
+  nav_partners: "Partners"
+  nav_partners_url: "/partners/"
   nav_contribute: "Meedoen"
   nav_lang_toggle: "EN"
   nav_lang_toggle_url: "/en/"
@@ -91,6 +93,7 @@ nl:
   partners_h2: "Partners"
   partners_intro: "Organisaties die Project Lacewing steunen met funding, hardware, menskracht of toegang tot codebases."
   partners_empty: "Partners worden binnenkort aangekondigd."
+  partners_view_all: "Alle partners bekijken"
 
   # Footer
   footer_tagline: "Een initiatief van DIVD — Dutch Institute for Vulnerability Disclosure"
@@ -110,6 +113,8 @@ en:
   # Navigation
   nav_context: "Background"
   nav_why_now: "Why now"
+  nav_partners: "Partners"
+  nav_partners_url: "/en/partners/"
   nav_contribute: "Get involved"
   nav_lang_toggle: "NL"
   nav_lang_toggle_url: "/"
@@ -199,6 +204,7 @@ en:
   partners_h2: "Partners"
   partners_intro: "Organisations supporting Project Lacewing with funding, hardware, people, or codebase access."
   partners_empty: "Partners will be announced soon."
+  partners_view_all: "View all partners"
 
   # Footer
   footer_tagline: "A DIVD initiative — Dutch Institute for Vulnerability Disclosure"
