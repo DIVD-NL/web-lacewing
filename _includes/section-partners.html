@@ -1,17 +1,14 @@
-{% assign s = site.data.strings %}
 {% if site.partners.size > 0 %}
-<section class="section-partners" id="{{ s.partners_id }}">
+<section class="section-partners" id="partners">
   <div class="container">
-    <p class="section-label">{{ s.partners_label }}</p>
-    <h2 class="section-title">{{ s.partners_h2 }}</h2>
-    {% if s.partners_intro %}
-    <p class="section-intro">{{ s.partners_intro }}</p>
-    {% endif %}
+    <p class="section-label">Our partners</p>
+    <h2 class="section-title">Partners</h2>
+    <p class="section-intro">Organisations supporting Project Lacewing with funding, hardware, people, or codebase access.</p>
 
     <div class="partners-grid">
       {% assign sorted_partners = site.partners | sort: "name" %}
       {% for partner in sorted_partners %}
-      <a href="{{ '/partner/' | append: partner.slug | append: '/' | relative_url }}" class="partner-card">
+      <a href="{{ partner.url | relative_url }}" class="partner-card">
         {% if partner.logo %}
         <div class="partner-card__logo">
           <img src="{{ partner.logo | relative_url }}" alt="{{ partner.name }}">
@@ -31,7 +28,7 @@
       {% endfor %}
     </div>
     <p class="partners-all-link">
-      <a href="{{ s.nav_partners_url | relative_url }}" class="btn btn--ghost">{{ s.partners_view_all }} →</a>
+      <a href="{{ '/partners/' | relative_url }}" class="btn btn--ghost">View all partners →</a>
     </p>
   </div>
 </section>

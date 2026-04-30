@@ -1,4 +1,3 @@
-{% assign s = site.data.strings %}
 <footer class="site-footer">
   <div class="container footer-grid">
     <div class="footer-col footer-col--brand">
@@ -6,23 +5,23 @@
         <img src="{{ '/assets/img/lacewing-logo.svg' | relative_url }}" alt="Project Lacewing" width="56" height="56">
         <span>Project <strong>Lacewing</strong></span>
       </a>
-      <p class="footer-tagline">{{ s.footer_tagline }}</p>
+      <p class="footer-tagline">A DIVD initiative — Dutch Institute for Vulnerability Disclosure</p>
       <a href="{{ '/assets/img/divd-logo.svg' | relative_url }}" class="footer-divd-logo-link" aria-label="DIVD">
         <img src="{{ '/assets/img/divd-logo.svg' | relative_url }}" alt="DIVD" width="80" height="40" class="footer-divd-logo">
       </a>
     </div>
 
     <div class="footer-col">
-      <h3 class="footer-heading">{{ s.footer_col2_heading }}</h3>
+      <h3 class="footer-heading">DIVD</h3>
       <ul role="list">
-        <li><a href="{{ s.footer_col2_link1_url }}" target="_blank" rel="noopener">{{ s.footer_col2_link1 }}</a></li>
-        <li><a href="{{ s.footer_col2_link2_url }}" target="_blank" rel="noopener">{{ s.footer_col2_link2 }}</a></li>
-        <li><a href="{{ s.footer_col2_link3_url }}" target="_blank" rel="noopener">{{ s.footer_col2_link3 }}</a></li>
+        <li><a href="https://www.divd.nl/about/" target="_blank" rel="noopener">About DIVD</a></li>
+        <li><a href="https://www.divd.nl/disclosure/" target="_blank" rel="noopener">Responsible Disclosure</a></li>
+        <li><a href="https://github.com/DIVD-NL" target="_blank" rel="noopener">GitHub</a></li>
       </ul>
     </div>
 
     <div class="footer-col">
-      <h3 class="footer-heading">{{ s.footer_col3_heading }}</h3>
+      <h3 class="footer-heading">Contact</h3>
       <ul role="list">
         <li><a href="mailto:{{ site.lacewing.contact_email }}">{{ site.lacewing.contact_email }}</a></li>
         <li><a href="{{ site.lacewing.github_url }}" target="_blank" rel="noopener">GitHub</a></li>
@@ -32,8 +31,8 @@
 
   <div class="footer-bottom">
     <div class="container footer-bottom-inner">
-      <span>{{ s.footer_legal }}</span>
-      <span>{{ s.footer_license }}</span>
+      <span>Project Lacewing is an initiative of DIVD | Dutch Institute for Vulnerability Disclosure</span>
+      <span>Content available under CC BY 4.0</span>
     </div>
   </div>
 </footer>

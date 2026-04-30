@@ -19,7 +19,8 @@ exclude:
 
 collections:
   partners:
-    output: false
+    output: true
+    permalink: /partner/:name/
 
 plugins:
   - jekyll-seo-tag
@@ -28,15 +29,9 @@ plugins:
 defaults:
   - scope:
       path: ""
-    values:
-      layout: "page"
-      lang: "en"
-  - scope:
-      path: ""
       type: "partners"
     values:
       layout: "partner"
-      lang: "en"
 
 twitter:
   username: DIVDnl
