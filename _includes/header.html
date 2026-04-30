@@ -15,6 +15,7 @@
     <ul class="nav-links" id="nav-links" role="list">
       <li><a href="#{{ s.context_id }}">{{ s.nav_context }}</a></li>
       <li><a href="#{{ s.why_id }}">{{ s.nav_why_now }}</a></li>
+      <li><a href="{{ s.nav_partners_url | relative_url }}">{{ s.nav_partners }}</a></li>
       <li><a href="#{{ s.contribute_id }}" class="nav-cta">{{ s.nav_contribute }}</a></li>
       <li class="nav-lang">
         <a href="{{ s.nav_lang_toggle_url | relative_url }}" hreflang="{% if page.lang == 'en' %}nl{% else %}en{% endif %}">{{ s.nav_lang_toggle }}</a>

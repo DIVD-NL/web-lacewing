@@ -17,6 +17,10 @@ exclude:
   - LICENSE
   - .github/
 
+collections:
+  partners:
+    output: false
+
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
@@ -32,6 +36,12 @@ defaults:
     values:
       layout: "page"
       lang: "nl"
+  - scope:
+      path: ""
+      type: "partners"
+    values:
+      layout: "partner"
+      lang: "en"
 
 twitter:
   username: DIVDnl
