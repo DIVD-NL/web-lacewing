@@ -32,6 +32,13 @@ jobs:
       - name: Deploy via rsync
         run: |
           rsync -avz --delete \
-            -e "ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=yes" \
+            -e "ssh -i ~/.ssh/deploy_key \
+                    -o StrictHostKeyChecking=yes \
+                    -o BatchMode=yes \
+                    -o ConnectTimeout=30" \
             ${{ vars.DEPLOY_SRC }} \
             ${{ vars.DEPLOY_USER }}@${{ vars.DEPLOY_HOST }}:${{ vars.DEPLOY_DEST }}
+
+      - name: Clean up SSH key
+        if: always()
+        run: rm -f ~/.ssh/deploy_key
