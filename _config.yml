@@ -20,7 +20,7 @@ exclude:
 collections:
   partners:
     output: true
-    permalink: /partners/:name/
+    permalink: /partner/:name/
 
 plugins:
   - jekyll-seo-tag
