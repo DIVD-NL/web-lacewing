@@ -22,35 +22,12 @@ jobs:
         env:
           JEKYLL_ENV: production
 
-      - name: Set up SSH
-        run: |
-          mkdir -p ~/.ssh
-          printf '%s\n' "${{ secrets.DEPLOY_SSH_KEY }}" > ~/.ssh/deploy_key
-          chmod 600 ~/.ssh/deploy_key
-          ssh-keyscan "${{ vars.DEPLOY_HOST }}" >> ~/.ssh/known_hosts
-          chmod 644 ~/.ssh/known_hosts
-
-      - name: Test SSH connection
-        run: |
-          ssh -i ~/.ssh/deploy_key \
-              -o StrictHostKeyChecking=yes \
-              -o BatchMode=yes \
-              -o ConnectTimeout=30 \
-              -o IdentitiesOnly=yes \
-              ${{ vars.DEPLOY_USER }}@${{ vars.DEPLOY_HOST }} \
-              "echo SSH connection OK"
-
       - name: Deploy via rsync
-        run: |
-          rsync -avz --delete \
-            -e "ssh -i ~/.ssh/deploy_key \
-                    -o StrictHostKeyChecking=yes \
-                    -o BatchMode=yes \
-                    -o ConnectTimeout=30 \
-                    -o IdentitiesOnly=yes" \
-            ${{ vars.DEPLOY_SRC }} \
-            ${{ vars.DEPLOY_USER }}@${{ vars.DEPLOY_HOST }}:${{ vars.DEPLOY_DEST }}
-
-      - name: Clean up SSH key
-        if: always()
-        run: rm -f ~/.ssh/deploy_key
+        uses: burnett01/rsync-deployments@5.2.1
+        with:
+          switches: -avzr --delete
+          path: ${{ vars.DEPLOY_SRC }}
+          remote_path: ${{ vars.DEPLOY_DEST }}
+          remote_host: ${{ vars.DEPLOY_HOST }}
+          remote_user: ${{ vars.DEPLOY_USER }}
+          remote_key: ${{ secrets.DEPLOY_SSH_KEY }}
