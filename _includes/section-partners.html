@@ -11,7 +11,12 @@
     <div class="partners-grid">
       {% assign sorted_partners = site.partners | sort: "name" %}
       {% for partner in sorted_partners %}
-      <a href="{{ partner.url | relative_url }}" class="partner-card">
+      {% if _lang == 'en' %}
+        {% assign _partner_url = '/en/partner/' | append: partner.slug | append: '/' %}
+      {% else %}
+        {% assign _partner_url = '/partner/' | append: partner.slug | append: '/' %}
+      {% endif %}
+      <a href="{{ _partner_url | relative_url }}" class="partner-card">
         {% if partner.logo %}
         <div class="partner-card__logo">
           <img src="{{ partner.logo | relative_url }}" alt="{{ partner.name }}">
@@ -23,8 +28,8 @@
         {% endif %}
         <div class="partner-card__body">
           <h3 class="partner-card__name">{{ partner.name }}</h3>
-          {% if partner.description %}
-          <p class="partner-card__description">{{ partner.description | truncatewords: 20 }}</p>
+          {% if partner[_lang].description %}
+          <p class="partner-card__description">{{ partner[_lang].description | truncatewords: 20 }}</p>
           {% endif %}
         </div>
       </a>

@@ -1,11 +1,13 @@
 ---
 layout: default
 ---
+{% assign s = site.data.strings[page.lang] %}
+{% assign t = page[page.lang] %}
 <main id="main-content" class="partner-detail">
   <div class="container">
 
     <nav class="breadcrumb" aria-label="Breadcrumb">
-      <a href="{{ '/partners/' | relative_url }}">Partners</a>
+      <a href="{{ s.nav_partners_url | relative_url }}">{{ s.nav_partners }}</a>
       <span aria-hidden="true">›</span>
       <span>{{ page.name }}</span>
     </nav>
@@ -20,24 +22,24 @@ layout: default
         <h1 class="partner-name">{{ page.name }}</h1>
         {% if page.website %}
         <a href="{{ page.website }}" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
-          Visit {{ page.name }} ↗
+          {{ s.partner_visit }} {{ page.name }} ↗
         </a>
         {% endif %}
       </div>
     </header>
 
     <div class="partner-body">
-      {% if page.description %}
+      {% if t.description %}
       <section class="partner-section">
-        <h2>About</h2>
-        <p>{{ page.description }}</p>
+        <h2>{{ s.partner_about }}</h2>
+        <p>{{ t.description }}</p>
       </section>
       {% endif %}
 
-      {% if page.contribution %}
+      {% if t.contribution %}
       <section class="partner-section">
-        <h2>Contribution</h2>
-        <p>{{ page.contribution }}</p>
+        <h2>{{ s.partner_contribution }}</h2>
+        <p>{{ t.contribution }}</p>
       </section>
       {% endif %}
 

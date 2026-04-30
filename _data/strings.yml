@@ -94,6 +94,9 @@ nl:
   partners_intro: "Organisaties die Project Lacewing steunen met funding, hardware, menskracht of toegang tot codebases."
   partners_empty: "Partners worden binnenkort aangekondigd."
   partners_view_all: "Alle partners bekijken"
+  partner_about: "Over"
+  partner_contribution: "Bijdrage"
+  partner_visit: "Bezoek"
 
   # Footer
   footer_tagline: "Een initiatief van DIVD — Dutch Institute for Vulnerability Disclosure"
@@ -205,6 +208,9 @@ en:
   partners_intro: "Organisations supporting Project Lacewing with funding, hardware, people, or codebase access."
   partners_empty: "Partners will be announced soon."
   partners_view_all: "View all partners"
+  partner_about: "About"
+  partner_contribution: "Contribution"
+  partner_visit: "Visit"
 
   # Footer
   footer_tagline: "A DIVD initiative — Dutch Institute for Vulnerability Disclosure"

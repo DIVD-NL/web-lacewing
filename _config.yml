@@ -19,8 +19,7 @@ exclude:
 
 collections:
   partners:
-    output: true
-    permalink: /partner/:name/
+    output: false
 
 plugins:
   - jekyll-seo-tag
