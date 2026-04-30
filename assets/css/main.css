@@ -132,7 +132,7 @@ ul[role="list"] { list-style: none; }
   align-items: center;
   gap: .5rem;
   padding: .7rem 1.5rem;
-  border-radius: var(--radius-sm);
+  border-radius: 9999px;
   font-family: var(--font);
   font-size: .9375rem;
   font-weight: 600;
@@ -383,15 +383,17 @@ ul[role="list"] { list-style: none; }
   letter-spacing: .1em;
   text-transform: uppercase;
   color: var(--divd-black);
-  background: var(--divd-yellow);
+  background: transparent;
+  border: 1.5px solid var(--divd-yellow);
   padding: .2rem .6rem;
-  border-radius: 2px;
+  border-radius: 3px;
   margin-bottom: .75rem;
 }
 
 .section-label--light {
-  color: var(--divd-black);
-  background: var(--divd-yellow);
+  color: var(--divd-yellow);
+  background: transparent;
+  border-color: var(--divd-yellow);
 }
 
 .section-h2 {
