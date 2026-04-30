@@ -51,11 +51,17 @@
       font-weight: 700;
     }
 
+    .content {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 600px;
+    }
+
     h1 {
       font-size: clamp(1.6rem, 5vw, 2.6rem);
       font-weight: 700;
       line-height: 1.2;
-      max-width: 600px;
       margin-bottom: 1.25rem;
     }
 
@@ -63,12 +69,12 @@
       font-size: 1rem;
       line-height: 1.65;
       color: rgba(255,255,255,.7);
-      max-width: 480px;
       margin-bottom: 2.5rem;
     }
 
     .label {
       display: inline-flex;
+      align-self: flex-end;
       align-items: center;
       gap: .6rem;
       font-size: .8rem;
@@ -79,7 +85,7 @@
       background: #ffd736;
       border-radius: 9999px;
       padding: .35rem 1rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: .5rem;
     }
 
     .divd-svg {
@@ -140,6 +146,7 @@
     <span class="wordmark">Project <strong>Lacewing</strong></span>
   </div>
 
+  <div class="content">
   <p class="label">
     An initiative by&nbsp;
     <svg class="divd-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 48" aria-label="DIVD">
@@ -157,6 +164,7 @@
   <h1>The internet belongs to everyone.<br>So does its defense.</h1>
 
   <p class="sub">We're getting ready. Stay tuned. 7-5-2026</p>
+  </div>
 
   <footer>
     <p>Questions? <a href="mailto:lacewing@divd.nl">lacewing@divd.nl</a></p>
