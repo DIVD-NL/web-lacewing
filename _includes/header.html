@@ -1,4 +1,4 @@
-{% assign _lang = page.lang | default: 'nl' %}{% assign s = site.data.strings[_lang] %}
+{% assign s = site.data.strings %}
 <header class="site-header">
   <nav class="container nav-inner" aria-label="{{ s.nav_aria_label }}">
     <a class="nav-logo" href="{{ '/' | relative_url }}" aria-label="Project Lacewing — home">
@@ -17,9 +17,6 @@
       <li><a href="#{{ s.why_id }}">{{ s.nav_why_now }}</a></li>
       <li><a href="{{ s.nav_partners_url | relative_url }}">{{ s.nav_partners }}</a></li>
       <li><a href="#{{ s.contribute_id }}" class="nav-cta">{{ s.nav_contribute }}</a></li>
-      <li class="nav-lang">
-        <a href="{{ s.nav_lang_toggle_url | relative_url }}" hreflang="{% if page.lang == 'en' %}nl{% else %}en{% endif %}">{{ s.nav_lang_toggle }}</a>
-      </li>
     </ul>
   </nav>
 </header>

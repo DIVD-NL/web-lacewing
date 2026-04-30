@@ -1,9 +1,9 @@
 ---
 layout: default
-lang: nl
+lang: en
 title: Partners
 ---
-{% assign s = site.data.strings.nl %}
+{% assign s = site.data.strings %}
 <main id="main-content">
   <section class="partners-index-hero">
     <div class="container">
@@ -33,8 +33,8 @@ title: Partners
           {% endif %}
           <div class="partner-card__body">
             <h2 class="partner-card__name">{{ partner.name }}</h2>
-            {% if partner.nl.description %}
-            <p class="partner-card__description">{{ partner.nl.description | truncatewords: 20 }}</p>
+            {% if partner.description %}
+            <p class="partner-card__description">{{ partner.description | truncatewords: 20 }}</p>
             {% endif %}
           </div>
         </a>

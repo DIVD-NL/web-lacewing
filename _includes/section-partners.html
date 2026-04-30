@@ -1,4 +1,4 @@
-{% assign _lang = page.lang | default: 'nl' %}{% assign s = site.data.strings[_lang] %}
+{% assign s = site.data.strings %}
 {% if site.partners.size > 0 %}
 <section class="section-partners" id="{{ s.partners_id }}">
   <div class="container">
@@ -11,12 +11,7 @@
     <div class="partners-grid">
       {% assign sorted_partners = site.partners | sort: "name" %}
       {% for partner in sorted_partners %}
-      {% if _lang == 'en' %}
-        {% assign _partner_url = '/en/partner/' | append: partner.slug | append: '/' %}
-      {% else %}
-        {% assign _partner_url = '/partner/' | append: partner.slug | append: '/' %}
-      {% endif %}
-      <a href="{{ _partner_url | relative_url }}" class="partner-card">
+      <a href="{{ '/partner/' | append: partner.slug | append: '/' | relative_url }}" class="partner-card">
         {% if partner.logo %}
         <div class="partner-card__logo">
           <img src="{{ partner.logo | relative_url }}" alt="{{ partner.name }}">
@@ -28,8 +23,8 @@
         {% endif %}
         <div class="partner-card__body">
           <h3 class="partner-card__name">{{ partner.name }}</h3>
-          {% if partner[_lang].description %}
-          <p class="partner-card__description">{{ partner[_lang].description | truncatewords: 20 }}</p>
+          {% if partner.description %}
+          <p class="partner-card__description">{{ partner.description | truncatewords: 20 }}</p>
           {% endif %}
         </div>
       </a>

@@ -1,227 +1,110 @@
-nl:
-  # Navigation
-  nav_context: "Achtergrond"
-  nav_why_now: "Waarom nu"
-  nav_partners: "Partners"
-  nav_partners_url: "/partners/"
-  nav_contribute: "Meedoen"
-  nav_lang_toggle: "EN"
-  nav_lang_toggle_url: "/en/"
-  nav_aria_label: "Hoofdnavigatie"
-  nav_mobile_toggle: "Menu"
+# Navigation
+nav_context: "Background"
+nav_why_now: "Why now"
+nav_partners: "Partners"
+nav_partners_url: "/partners/"
+nav_contribute: "Get involved"
+nav_aria_label: "Main navigation"
+nav_mobile_toggle: "Menu"
 
-  # Hero
-  hero_label: "Een initiatief van"
-  hero_headline: "Het internet is van iedereen. De verdediging ook."
-  hero_sub: "Project Lacewing is het Europese, open antwoord op AI-gedreven kwetsbaarheidsonderzoek — door DIVD, transparant en non-profit."
-  hero_cta_primary: "Doe mee"
-  hero_cta_primary_url: "#meedoen"
-  hero_cta_secondary: "Lees meer"
-  hero_cta_secondary_url: "#achtergrond"
-  hero_tagline: "Vernoemd naar de gaasvlieg (Chrysopidae) — net als de glasswingvlinder, maar van nature een bestrijder van plagen."
+# Hero
+hero_label: "An initiative by"
+hero_headline: "The internet belongs to everyone. So does its defense."
+hero_sub: "Project Lacewing is the European, open answer to AI-driven vulnerability research — by DIVD, transparent and non-profit."
+hero_cta_primary: "Get involved"
+hero_cta_primary_url: "#get-involved"
+hero_cta_secondary: "Learn more"
+hero_cta_secondary_url: "#background"
+hero_tagline: "Named after the lacewing (Chrysopidae) — like the glasswing butterfly, but a natural predator of pests."
 
-  # Section 2: Context
-  context_id: "achtergrond"
-  context_label: "Achtergrond"
-  context_h2: "Glasswing is een stap vooruit — maar voor wie?"
-  context_body: |
-    Op 7 april 2026 lanceerde Anthropic <strong>Project Glasswing</strong> — een grootschalig initiatief waarbij AI wordt ingezet om kwetsbaarheden te vinden en te fixen in kritieke software. Klinkt goed. En dat is het ook, deels.
-    <br><br>
-    Maar kijk wie er aan tafel zit: Amazon, Apple, Microsoft, Google, NVIDIA, JPMorgan, Cisco — en de Linux Foundation. De beslissingen over <em>wát</em> er onderzocht wordt, <em>wát</em> er gefixed wordt en <em>wíe</em> er van profiteert, liggen grotendeels in handen van een handvol Amerikaanse techbedrijven en investeerders. Toegang tot het onderliggende model kost na de preview-periode $25–$125 per miljoen tokens.
-  context_quote: "Als Europa dit overlaat aan anderen, heeft Europa niets meer te zeggen over de veiligheid van haar eigen digitale infrastructuur."
-  context_quote_attribution: "— Uit de Project Lacewing pitch"
-  context_divd_intro: "DIVD heeft iets wat geen enkel Glasswing-partner heeft:"
-  context_divd_track: "een trackrecord van onafhankelijk, non-profit, responsible disclosure — zonder agenda behalve het internet veiliger maken."
+# Section 2: Context
+context_id: "background"
+context_label: "Background"
+context_h2: "Glasswing is a step forward — but for whom?"
+context_body: |
+  On April 7, 2026, Anthropic launched <strong>Project Glasswing</strong> — a large-scale initiative using AI to find and fix vulnerabilities in critical software. Sounds great. And it is, partly.
+  <br><br>
+  But look who's at the table: Amazon, Apple, Microsoft, Google, NVIDIA, JPMorgan, Cisco — and the Linux Foundation. The decisions about <em>what</em> gets investigated, <em>what</em> gets fixed, and <em>who</em> benefits are largely in the hands of a small group of American tech companies and investors. After the preview period, access to the underlying model costs $25–$125 per million tokens.
+context_quote: "If Europe leaves this to others, Europe loses its voice in the security of its own digital infrastructure."
+context_quote_attribution: "— From the Project Lacewing pitch"
+context_divd_intro: "DIVD has something no Glasswing partner has:"
+context_divd_track: "a track record of independent, non-profit, responsible disclosure — with no agenda other than making the internet safer."
 
-  # Section 3: What DIVD can do
-  divd_id: "wat-divd-doet"
-  divd_label: "Ons voorstel"
-  divd_h2: "Project Lacewing: een Europees antwoord"
-  divd_intro: "Geen gesloten clubje. Geen proprietary modellen waar we van afhankelijk zijn. Maar gerichte inzet van AI om kwetsbaarheden te vinden én op te lossen."
-  divd_card1_title: "AI-capaciteit opbouwen"
-  divd_card1_body: "Fondsen werven voor AI-tokens en lokaal draaiende open-source modellen — inclusief de hardware waarop ze draaien."
-  divd_card2_title: "Geautomatiseerd onderzoek"
-  divd_card2_body: "AI inzetten voor kwetsbaarheidsonderzoek op de schaal die DIVD aankan, maar slimmer en sneller dan ooit."
-  divd_card3_title: "Open samenwerking"
-  divd_card3_body: "Bedrijven dragen bij met geld, hardware, menskracht of codebase-toegang — en committeren zich aan het fixen van wat we vinden."
-  divd_card4_title: "Responsible Disclosure"
-  divd_card4_body: "Alles wat we vinden en leren, delen we — maar verantwoordelijk. Eerst de betrokken partij, dan de wereld. Zoals altijd."
+# Section 3: What DIVD can do
+divd_id: "what-divd-does"
+divd_label: "Our proposal"
+divd_h2: "Project Lacewing: a European answer"
+divd_intro: "No closed club. No proprietary models we depend on. Instead, targeted use of AI to find and fix vulnerabilities in critical software."
+divd_card1_title: "Build AI capacity"
+divd_card1_body: "Raise funds to invest in AI tokens and locally running open-source models — including the hardware to run them on."
+divd_card2_title: "Automated research"
+divd_card2_body: "Deploy AI for vulnerability research at the scale DIVD can handle, but smarter and faster than ever."
+divd_card3_title: "Open collaboration"
+divd_card3_body: "Companies contribute money, hardware, people, or codebase access — and commit to fixing what we find."
+divd_card4_title: "Responsible Disclosure"
+divd_card4_body: "Everything we find and learn, we share — but responsibly. The affected party first, then the world. As always."
 
-  # Section 4: Why now
-  why_id: "waarom-nu"
-  why_label: "De urgentie"
-  why_h2: "Waarom nu"
-  why_body: |
-    De drempel voor het vinden van kwetsbaarheden is structureel aan het dalen. Wat Glasswing aantoont is dat AI al beter is dan de meeste mensen in het vinden van bugs die al tien, twintig, soms dertig jaar in kritieke software zitten. Dat gaat niet terugdraaien.
-    <br><br>
-    Als we nu niets doen, is het antwoord over twee jaar: een handvol Amerikaanse bedrijven, een paar Aziatische staatsactoren, en de criminelen die ze inhalen.
-  why_quote: "De vraag is niet óf deze capaciteiten er komen. De vraag is wie ze in handen heeft."
-  why_conclusion: "DIVD kan een derde weg zijn — transparant, onafhankelijk, Europees."
+# Section 4: Why now
+why_id: "why-now"
+why_label: "The urgency"
+why_h2: "Why now"
+why_body: |
+  The barrier to finding vulnerabilities is structurally dropping. What Glasswing demonstrates is that AI is already better than most humans at finding bugs that have sat undetected in critical software for ten, twenty, sometimes thirty years. That's not going to reverse.
+  <br><br>
+  If we do nothing, the answer in two years will be: a handful of American companies, a few Asian state actors, and the criminals catching up with them.
+why_quote: "The question isn't whether these capabilities are coming. The question is who has them."
+why_conclusion: "DIVD can be a third way — transparent, independent, European."
 
-  # Section 5: Stats
-  stats_id: "divd-in-cijfers"
-  stats_label: "DIVD in cijfers"
-  stats_h2: "Een bewezen trackrecord"
-  stats_1_number: "189"
-  stats_1_label: "vrijwilligers"
-  stats_2_number: "193"
-  stats_2_label: "cases afgehandeld"
-  stats_3_number: "1,4M"
-  stats_3_label: "kwetsbare IP's genotificeerd"
+# Section 5: Stats
+stats_id: "divd-by-numbers"
+stats_label: "DIVD by numbers"
+stats_h2: "A proven track record"
+stats_1_number: "189"
+stats_1_label: "volunteers"
+stats_2_number: "193"
+stats_2_label: "cases handled"
+stats_3_number: "1.4M"
+stats_3_label: "vulnerable IPs notified"
 
-  # Section 6: Contribute
-  contribute_id: "meedoen"
-  contribute_label: "Doe mee"
-  contribute_h2: "Wat we nodig hebben"
-  contribute_intro: "Dit project kan niet slagen zonder substantiële funding. Financiering op een schaal die DIVD tot nu toe niet heeft kunnen bereiken, want AI modellen draaien en trainen is niet goedkoop. Maar het alternatief is toekijken hoe anderen de standaard zetten."
-  contribute_card1_title: "Technisch"
-  contribute_card1_body: "Help nadenken over de technische opzet: welke modellen, welke hardware, welke targets."
-  contribute_card1_cta: "Meld je aan"
-  contribute_card2_title: "Fondsenwerving"
-  contribute_card2_body: "Help met fondsenwerving: subsidies, partners en donateurs vinden en benaderen."
-  contribute_card2_cta: "Meld je aan"
-  contribute_card3_title: "Champion"
-  contribute_card3_body: "Draag dit mede uit, help het te leiden en geef het gezicht naar buiten."
-  contribute_card3_cta: "Meld je aan"
-  contribute_closing: "Het internet is van iedereen. Laten we zorgen dat de verdediging dat ook is."
-  contribute_donate_label: "Steun Project Lacewing"
-  contribute_contact_label: "Neem contact op"
+# Section 6: Contribute
+contribute_id: "get-involved"
+contribute_label: "Get involved"
+contribute_h2: "What we need"
+contribute_intro: "This project cannot succeed without substantial funding — on a scale DIVD has not been able to reach before, because running and training AI models is not cheap. But the alternative is watching others set the standard."
+contribute_card1_title: "Technical"
+contribute_card1_body: "Help think through the technical setup: which models, which hardware, which targets."
+contribute_card1_cta: "Sign up"
+contribute_card2_title: "Fundraising"
+contribute_card2_body: "Help with fundraising: finding and approaching grants, partners, and donors."
+contribute_card2_cta: "Sign up"
+contribute_card3_title: "Champion"
+contribute_card3_body: "Help lead and champion this effort — give it a face and voice outward."
+contribute_card3_cta: "Sign up"
+contribute_closing: "The internet belongs to everyone. Let's make sure its defense does too."
+contribute_donate_label: "Support Project Lacewing"
+contribute_contact_label: "Get in touch"
 
-  # Partners
-  partners_id: "partners"
-  partners_label: "Onze partners"
-  partners_h2: "Partners"
-  partners_intro: "Organisaties die Project Lacewing steunen met funding, hardware, menskracht of toegang tot codebases."
-  partners_empty: "Partners worden binnenkort aangekondigd."
-  partners_view_all: "Alle partners bekijken"
-  partner_about: "Over"
-  partner_contribution: "Bijdrage"
-  partner_visit: "Bezoek"
+# Partners
+partners_id: "partners"
+partners_label: "Our partners"
+partners_h2: "Partners"
+partners_intro: "Organisations supporting Project Lacewing with funding, hardware, people, or codebase access."
+partners_empty: "Partners will be announced soon."
+partners_view_all: "View all partners"
+partner_about: "About"
+partner_contribution: "Contribution"
+partner_visit: "Visit"
 
-  # Footer
-  footer_tagline: "Een initiatief van DIVD — Dutch Institute for Vulnerability Disclosure"
-  footer_col1_heading: "Project Lacewing"
-  footer_col2_heading: "DIVD"
-  footer_col2_link1: "Over DIVD"
-  footer_col2_link1_url: "https://www.divd.nl/about/"
-  footer_col2_link2: "Responsible Disclosure"
-  footer_col2_link2_url: "https://www.divd.nl/disclosure/"
-  footer_col2_link3: "GitHub"
-  footer_col2_link3_url: "https://github.com/DIVD-NL"
-  footer_col3_heading: "Contact"
-  footer_legal: "Project Lacewing is een initiatief van DIVD | Dutch Institute for Vulnerability Disclosure"
-  footer_license: "Inhoud beschikbaar onder CC BY 4.0"
-
-en:
-  # Navigation
-  nav_context: "Background"
-  nav_why_now: "Why now"
-  nav_partners: "Partners"
-  nav_partners_url: "/en/partners/"
-  nav_contribute: "Get involved"
-  nav_lang_toggle: "NL"
-  nav_lang_toggle_url: "/"
-  nav_aria_label: "Main navigation"
-  nav_mobile_toggle: "Menu"
-
-  # Hero
-  hero_label: "An initiative by"
-  hero_headline: "The internet belongs to everyone. So does its defense."
-  hero_sub: "Project Lacewing is the European, open answer to AI-driven vulnerability research — by DIVD, transparent and non-profit."
-  hero_cta_primary: "Get involved"
-  hero_cta_primary_url: "#get-involved"
-  hero_cta_secondary: "Learn more"
-  hero_cta_secondary_url: "#background"
-  hero_tagline: "Named after the lacewing (Chrysopidae) — like the glasswing butterfly, but a natural predator of pests."
-
-  # Section 2: Context
-  context_id: "background"
-  context_label: "Background"
-  context_h2: "Glasswing is a step forward — but for whom?"
-  context_body: |
-    On April 7, 2026, Anthropic launched <strong>Project Glasswing</strong> — a large-scale initiative using AI to find and fix vulnerabilities in critical software. Sounds great. And it is, partly.
-    <br><br>
-    But look who's at the table: Amazon, Apple, Microsoft, Google, NVIDIA, JPMorgan, Cisco — and the Linux Foundation. The decisions about <em>what</em> gets investigated, <em>what</em> gets fixed, and <em>who</em> benefits are largely in the hands of a small group of American tech companies and investors. After the preview period, access to the underlying model costs $25–$125 per million tokens.
-  context_quote: "If Europe leaves this to others, Europe loses its voice in the security of its own digital infrastructure."
-  context_quote_attribution: "— From the Project Lacewing pitch"
-  context_divd_intro: "DIVD has something no Glasswing partner has:"
-  context_divd_track: "a track record of independent, non-profit, responsible disclosure — with no agenda other than making the internet safer."
-
-  # Section 3: What DIVD can do
-  divd_id: "what-divd-does"
-  divd_label: "Our proposal"
-  divd_h2: "Project Lacewing: a European answer"
-  divd_intro: "No closed club. No proprietary models we depend on. Instead, targeted use of AI to find and fix vulnerabilities in critical software."
-  divd_card1_title: "Build AI capacity"
-  divd_card1_body: "Raise funds to invest in AI tokens and locally running open-source models — including the hardware to run them on."
-  divd_card2_title: "Automated research"
-  divd_card2_body: "Deploy AI for vulnerability research at the scale DIVD can handle, but smarter and faster than ever."
-  divd_card3_title: "Open collaboration"
-  divd_card3_body: "Companies contribute money, hardware, people, or codebase access — and commit to fixing what we find."
-  divd_card4_title: "Responsible Disclosure"
-  divd_card4_body: "Everything we find and learn, we share — but responsibly. The affected party first, then the world. As always."
-
-  # Section 4: Why now
-  why_id: "why-now"
-  why_label: "The urgency"
-  why_h2: "Why now"
-  why_body: |
-    The barrier to finding vulnerabilities is structurally dropping. What Glasswing demonstrates is that AI is already better than most humans at finding bugs that have sat undetected in critical software for ten, twenty, sometimes thirty years. That's not going to reverse.
-    <br><br>
-    If we do nothing, the answer in two years will be: a handful of American companies, a few Asian state actors, and the criminals catching up with them.
-  why_quote: "The question isn't whether these capabilities are coming. The question is who has them."
-  why_conclusion: "DIVD can be a third way — transparent, independent, European."
-
-  # Section 5: Stats
-  stats_id: "divd-by-numbers"
-  stats_label: "DIVD by numbers"
-  stats_h2: "A proven track record"
-  stats_1_number: "189"
-  stats_1_label: "volunteers"
-  stats_2_number: "193"
-  stats_2_label: "cases handled"
-  stats_3_number: "1.4M"
-  stats_3_label: "vulnerable IPs notified"
-
-  # Section 6: Contribute
-  contribute_id: "get-involved"
-  contribute_label: "Get involved"
-  contribute_h2: "What we need"
-  contribute_intro: "This project cannot succeed without substantial funding — on a scale DIVD has not been able to reach before, because running and training AI models is not cheap. But the alternative is watching others set the standard."
-  contribute_card1_title: "Technical"
-  contribute_card1_body: "Help think through the technical setup: which models, which hardware, which targets."
-  contribute_card1_cta: "Sign up"
-  contribute_card2_title: "Fundraising"
-  contribute_card2_body: "Help with fundraising: finding and approaching grants, partners, and donors."
-  contribute_card2_cta: "Sign up"
-  contribute_card3_title: "Champion"
-  contribute_card3_body: "Help lead and champion this effort — give it a face and voice outward."
-  contribute_card3_cta: "Sign up"
-  contribute_closing: "The internet belongs to everyone. Let's make sure its defense does too."
-  contribute_donate_label: "Support Project Lacewing"
-  contribute_contact_label: "Get in touch"
-
-  # Partners
-  partners_id: "partners"
-  partners_label: "Our partners"
-  partners_h2: "Partners"
-  partners_intro: "Organisations supporting Project Lacewing with funding, hardware, people, or codebase access."
-  partners_empty: "Partners will be announced soon."
-  partners_view_all: "View all partners"
-  partner_about: "About"
-  partner_contribution: "Contribution"
-  partner_visit: "Visit"
-
-  # Footer
-  footer_tagline: "A DIVD initiative — Dutch Institute for Vulnerability Disclosure"
-  footer_col1_heading: "Project Lacewing"
-  footer_col2_heading: "DIVD"
-  footer_col2_link1: "About DIVD"
-  footer_col2_link1_url: "https://www.divd.nl/about/"
-  footer_col2_link2: "Responsible Disclosure"
-  footer_col2_link2_url: "https://www.divd.nl/disclosure/"
-  footer_col2_link3: "GitHub"
-  footer_col2_link3_url: "https://github.com/DIVD-NL"
-  footer_col3_heading: "Contact"
-  footer_legal: "Project Lacewing is an initiative of DIVD | Dutch Institute for Vulnerability Disclosure"
-  footer_license: "Content available under CC BY 4.0"
+# Footer
+footer_tagline: "A DIVD initiative — Dutch Institute for Vulnerability Disclosure"
+footer_col1_heading: "Project Lacewing"
+footer_col2_heading: "DIVD"
+footer_col2_link1: "About DIVD"
+footer_col2_link1_url: "https://www.divd.nl/about/"
+footer_col2_link2: "Responsible Disclosure"
+footer_col2_link2_url: "https://www.divd.nl/disclosure/"
+footer_col2_link3: "GitHub"
+footer_col2_link3_url: "https://github.com/DIVD-NL"
+footer_col3_heading: "Contact"
+footer_legal: "Project Lacewing is an initiative of DIVD | Dutch Institute for Vulnerability Disclosure"
+footer_license: "Content available under CC BY 4.0"

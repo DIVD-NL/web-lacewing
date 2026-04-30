@@ -9,28 +9,25 @@ module Lacewing
 
       collection.docs.each do |doc|
         slug = File.basename(doc.path, '.*')
-
-        site.pages << build_page(site, doc, 'nl', "partner/#{slug}", "/en/partner/#{slug}/")
-        site.pages << build_page(site, doc, 'en', "en/partner/#{slug}", "/partner/#{slug}/")
+        site.pages << build_page(site, doc, slug)
       end
     end
 
     private
 
-    def build_page(site, doc, lang, dir, alt_url)
-      page = Jekyll::PageWithoutAFile.new(site, site.source, dir, 'index.html')
+    def build_page(site, doc, slug)
+      page = Jekyll::PageWithoutAFile.new(site, site.source, "partner/#{slug}", 'index.html')
       page.data.merge!(
         'layout'       => 'partner',
-        'lang'         => lang,
+        'lang'         => 'en',
         'title'        => doc.data['name'],
         'name'         => doc.data['name'],
         'website'      => doc.data['website'],
         'logo'         => doc.data['logo'],
         'founded'      => doc.data['founded'],
-        'nl'           => doc.data['nl'],
-        'en'           => doc.data['en'],
-        'slug'         => File.basename(doc.path, '.*'),
-        'lang_alt_url' => alt_url,
+        'description'  => doc.data['description'],
+        'contribution' => doc.data['contribution'],
+        'slug'         => slug,
       )
       page.content = doc.content
       page

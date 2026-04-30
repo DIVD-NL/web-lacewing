@@ -1,8 +1,7 @@
 ---
 layout: default
 ---
-{% assign s = site.data.strings[page.lang] %}
-{% assign t = page[page.lang] %}
+{% assign s = site.data.strings %}
 <main id="main-content" class="partner-detail">
   <div class="container">
 
@@ -29,17 +28,17 @@ layout: default
     </header>
 
     <div class="partner-body">
-      {% if t.description %}
+      {% if page.description %}
       <section class="partner-section">
         <h2>{{ s.partner_about }}</h2>
-        <p>{{ t.description }}</p>
+        <p>{{ page.description }}</p>
       </section>
       {% endif %}
 
-      {% if t.contribution %}
+      {% if page.contribution %}
       <section class="partner-section">
         <h2>{{ s.partner_contribution }}</h2>
-        <p>{{ t.contribution }}</p>
+        <p>{{ page.contribution }}</p>
       </section>
       {% endif %}
 
