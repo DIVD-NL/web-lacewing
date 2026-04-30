@@ -1,25 +1,21 @@
-{% assign _lang = page.lang | default: 'nl' %}{% assign s = site.data.strings[_lang] %}
 <header class="site-header">
-  <nav class="container nav-inner" aria-label="{{ s.nav_aria_label }}">
+  <nav class="container nav-inner" aria-label="Main navigation">
     <a class="nav-logo" href="{{ '/' | relative_url }}" aria-label="Project Lacewing — home">
       <img src="{{ '/assets/img/lacewing-logo.svg' | relative_url }}" alt="" width="32" height="32" aria-hidden="true">
       <span class="nav-logo-text">Project <strong>Lacewing</strong></span>
     </a>
 
-    <button class="nav-mobile-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="{{ s.nav_mobile_toggle }}">
+    <button class="nav-mobile-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Menu">
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
     </button>
 
     <ul class="nav-links" id="nav-links" role="list">
-      <li><a href="#{{ s.context_id }}">{{ s.nav_context }}</a></li>
-      <li><a href="#{{ s.why_id }}">{{ s.nav_why_now }}</a></li>
-      <li><a href="{{ s.nav_partners_url | relative_url }}">{{ s.nav_partners }}</a></li>
-      <li><a href="#{{ s.contribute_id }}" class="nav-cta">{{ s.nav_contribute }}</a></li>
-      <li class="nav-lang">
-        <a href="{{ s.nav_lang_toggle_url | relative_url }}" hreflang="{% if page.lang == 'en' %}nl{% else %}en{% endif %}">{{ s.nav_lang_toggle }}</a>
-      </li>
+      <li><a href="#background">Background</a></li>
+      <li><a href="#why-now">Why now</a></li>
+      <li><a href="{{ '/partners/' | relative_url }}">Partners</a></li>
+      <li><a href="#get-involved" class="nav-cta">Get involved</a></li>
     </ul>
   </nav>
 </header>

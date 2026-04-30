@@ -1,20 +1,21 @@
-{% assign _lang = page.lang | default: 'nl' %}{% assign s = site.data.strings[_lang] %}
-<section class="section section--white" id="{{ s.context_id }}" aria-labelledby="context-h2">
+<section class="section section--white" id="background" aria-labelledby="context-h2">
   <div class="container">
-    <p class="section-label">{{ s.context_label }}</p>
-    <h2 class="section-h2" id="context-h2">{{ s.context_h2 }}</h2>
+    <p class="section-label">Background</p>
+    <h2 class="section-h2" id="context-h2">Glasswing is a step forward — but for whom?</h2>
     <div class="context-grid">
       <div class="context-body">
-        <p>{{ s.context_body }}</p>
+        <p>On April 7, 2026, Anthropic launched <strong>Project Glasswing</strong> — a large-scale initiative using AI to find and fix vulnerabilities in critical software. Sounds great. And it is, partly.
+        <br><br>
+        But look who's at the table: Amazon, Apple, Microsoft, Google, NVIDIA, JPMorgan, Cisco — and the Linux Foundation. The decisions about <em>what</em> gets investigated, <em>what</em> gets fixed, and <em>who</em> benefits are largely in the hands of a small group of American tech companies and investors. After the preview period, access to the underlying model costs $25–$125 per million tokens.</p>
         <p class="context-divd-track">
-          <strong>{{ s.context_divd_intro }}</strong>
-          {{ s.context_divd_track }}
+          <strong>DIVD has something no Glasswing partner has:</strong>
+          a track record of independent, non-profit, responsible disclosure — with no agenda other than making the internet safer.
         </p>
       </div>
       <aside class="context-quote-block">
         <blockquote class="pull-quote">
-          <p>{{ s.context_quote }}</p>
-          <footer>{{ s.context_quote_attribution }}</footer>
+          <p>If Europe leaves this to others, Europe loses its voice in the security of its own digital infrastructure.</p>
+          <footer>— From the Project Lacewing pitch</footer>
         </blockquote>
       </aside>
     </div>

@@ -1,41 +1,40 @@
-{% assign _lang = page.lang | default: 'nl' %}{% assign s = site.data.strings[_lang] %}
-<section class="section section--offwhite" id="{{ s.contribute_id }}" aria-labelledby="contribute-h2">
+<section class="section section--offwhite" id="get-involved" aria-labelledby="contribute-h2">
   <div class="container">
-    <p class="section-label">{{ s.contribute_label }}</p>
-    <h2 class="section-h2" id="contribute-h2">{{ s.contribute_h2 }}</h2>
-    <p class="section-intro">{{ s.contribute_intro }}</p>
+    <p class="section-label">Get involved</p>
+    <h2 class="section-h2" id="contribute-h2">What we need</h2>
+    <p class="section-intro">This project cannot succeed without substantial funding — on a scale DIVD has not been able to reach before, because running and training AI models is not cheap. But the alternative is watching others set the standard.</p>
     <div class="role-cards">
       <div class="role-card">
         <div class="role-card-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
         </div>
-        <h3>{{ s.contribute_card1_title }}</h3>
-        <p>{{ s.contribute_card1_body }}</p>
-        <a href="mailto:{{ site.lacewing.contact_email }}?subject={{ s.contribute_card1_title }}" class="btn btn--ghost">{{ s.contribute_card1_cta }}</a>
+        <h3>Technical</h3>
+        <p>Help think through the technical setup: which models, which hardware, which targets.</p>
+        <a href="mailto:{{ site.lacewing.contact_email }}?subject=Technical" class="btn btn--ghost">Sign up</a>
       </div>
       <div class="role-card">
         <div class="role-card-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
         </div>
-        <h3>{{ s.contribute_card2_title }}</h3>
-        <p>{{ s.contribute_card2_body }}</p>
-        <a href="mailto:{{ site.lacewing.contact_email }}?subject={{ s.contribute_card2_title }}" class="btn btn--ghost">{{ s.contribute_card2_cta }}</a>
+        <h3>Fundraising</h3>
+        <p>Help with fundraising: finding and approaching grants, partners, and donors.</p>
+        <a href="mailto:{{ site.lacewing.contact_email }}?subject=Fundraising" class="btn btn--ghost">Sign up</a>
       </div>
       <div class="role-card">
         <div class="role-card-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
         </div>
-        <h3>{{ s.contribute_card3_title }}</h3>
-        <p>{{ s.contribute_card3_body }}</p>
-        <a href="mailto:{{ site.lacewing.contact_email }}?subject={{ s.contribute_card3_title }}" class="btn btn--ghost">{{ s.contribute_card3_cta }}</a>
+        <h3>Champion</h3>
+        <p>Help lead and champion this effort — give it a face and voice outward.</p>
+        <a href="mailto:{{ site.lacewing.contact_email }}?subject=Champion" class="btn btn--ghost">Sign up</a>
       </div>
     </div>
 
     <div class="contribute-closing">
-      <p class="contribute-closing-text">{{ s.contribute_closing }}</p>
+      <p class="contribute-closing-text">The internet belongs to everyone. Let's make sure its defense does too.</p>
       <div class="contribute-ctas">
-        <a href="{{ site.lacewing.donate_url }}" class="btn btn--primary" target="_blank" rel="noopener">{{ s.contribute_donate_label }}</a>
-        <a href="mailto:{{ site.lacewing.contact_email }}" class="btn btn--outline-dark">{{ s.contribute_contact_label }}</a>
+        <a href="{{ site.lacewing.donate_url }}" class="btn btn--primary" target="_blank" rel="noopener">Support Project Lacewing</a>
+        <a href="mailto:{{ site.lacewing.contact_email }}" class="btn btn--outline-dark">Get in touch</a>
       </div>
     </div>
   </div>

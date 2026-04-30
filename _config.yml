@@ -1,5 +1,5 @@
 title: "Project Lacewing"
-description: "Een Europees, open, community-gedreven antwoord op AI-kwetsbaarheidsonderzoek. Door DIVD."
+description: "A European, open, community-driven answer to AI-driven vulnerability research. By DIVD."
 baseurl: "/web-lacewing"
 url: "https://divd-nl.github.io"
 
@@ -19,7 +19,8 @@ exclude:
 
 collections:
   partners:
-    output: false
+    output: true
+    permalink: /partner/:name/
 
 plugins:
   - jekyll-seo-tag
@@ -27,21 +28,10 @@ plugins:
 
 defaults:
   - scope:
-      path: "en"
-    values:
-      layout: "page"
-      lang: "en"
-  - scope:
-      path: ""
-    values:
-      layout: "page"
-      lang: "nl"
-  - scope:
       path: ""
       type: "partners"
     values:
       layout: "partner"
-      lang: "en"
 
 twitter:
   username: DIVDnl

@@ -1,17 +1,13 @@
 ---
 layout: default
-lang: nl
 title: Partners
 ---
-{% assign s = site.data.strings.nl %}
 <main id="main-content">
   <section class="partners-index-hero">
     <div class="container">
-      <p class="section-label section-label--light">{{ s.partners_label }}</p>
-      <h1>{{ s.partners_h2 }}</h1>
-      {% if s.partners_intro %}
-      <p class="section-intro section-intro--light">{{ s.partners_intro }}</p>
-      {% endif %}
+      <p class="section-label section-label--light">Our partners</p>
+      <h1>Partners</h1>
+      <p class="section-intro section-intro--light">Organisations supporting Project Lacewing with funding, hardware, people, or codebase access.</p>
     </div>
   </section>
 
@@ -21,7 +17,7 @@ title: Partners
       <div class="partners-grid">
         {% assign sorted_partners = site.partners | sort: "name" %}
         {% for partner in sorted_partners %}
-        <a href="{{ '/partner/' | append: partner.slug | append: '/' | relative_url }}" class="partner-card">
+        <a href="{{ partner.url | relative_url }}" class="partner-card">
           {% if partner.logo %}
           <div class="partner-card__logo">
             <img src="{{ partner.logo | relative_url }}" alt="{{ partner.name }}">
@@ -33,15 +29,15 @@ title: Partners
           {% endif %}
           <div class="partner-card__body">
             <h2 class="partner-card__name">{{ partner.name }}</h2>
-            {% if partner.nl.description %}
-            <p class="partner-card__description">{{ partner.nl.description | truncatewords: 20 }}</p>
+            {% if partner.description %}
+            <p class="partner-card__description">{{ partner.description | truncatewords: 20 }}</p>
             {% endif %}
           </div>
         </a>
         {% endfor %}
       </div>
       {% else %}
-      <p class="partners-empty">{{ s.partners_empty }}</p>
+      <p class="partners-empty">Partners will be announced soon.</p>
       {% endif %}
     </div>
   </section>
