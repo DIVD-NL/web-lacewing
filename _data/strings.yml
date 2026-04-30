@@ -85,6 +85,13 @@ nl:
   contribute_donate_label: "Steun Project Lacewing"
   contribute_contact_label: "Neem contact op"
 
+  # Partners
+  partners_id: "partners"
+  partners_label: "Onze partners"
+  partners_h2: "Partners"
+  partners_intro: "Organisaties die Project Lacewing steunen met funding, hardware, menskracht of toegang tot codebases."
+  partners_empty: "Partners worden binnenkort aangekondigd."
+
   # Footer
   footer_tagline: "Een initiatief van DIVD — Dutch Institute for Vulnerability Disclosure"
   footer_col1_heading: "Project Lacewing"
@@ -185,6 +192,13 @@ en:
   contribute_closing: "The internet belongs to everyone. Let's make sure its defense does too."
   contribute_donate_label: "Support Project Lacewing"
   contribute_contact_label: "Get in touch"
+
+  # Partners
+  partners_id: "partners"
+  partners_label: "Our partners"
+  partners_h2: "Partners"
+  partners_intro: "Organisations supporting Project Lacewing with funding, hardware, people, or codebase access."
+  partners_empty: "Partners will be announced soon."
 
   # Footer
   footer_tagline: "A DIVD initiative — Dutch Institute for Vulnerability Disclosure"

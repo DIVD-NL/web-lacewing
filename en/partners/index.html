@@ -1,0 +1,48 @@
+---
+layout: default
+lang: en
+title: Partners
+---
+{% assign s = site.data.strings.en %}
+<main id="main-content">
+  <section class="partners-index-hero">
+    <div class="container">
+      <p class="section-label">{{ s.partners_label }}</p>
+      <h1>{{ s.partners_h2 }}</h1>
+      {% if s.partners_intro %}
+      <p class="section-intro">{{ s.partners_intro }}</p>
+      {% endif %}
+    </div>
+  </section>
+
+  <section class="partners-index-grid">
+    <div class="container">
+      {% if site.partners.size > 0 %}
+      <div class="partners-grid">
+        {% assign sorted_partners = site.partners | sort: "name" %}
+        {% for partner in sorted_partners %}
+        <a href="{{ partner.url | relative_url }}" class="partner-card">
+          {% if partner.logo %}
+          <div class="partner-card__logo">
+            <img src="{{ partner.logo | relative_url }}" alt="{{ partner.name }}">
+          </div>
+          {% else %}
+          <div class="partner-card__logo partner-card__logo--placeholder">
+            <span>{{ partner.name | slice: 0 }}</span>
+          </div>
+          {% endif %}
+          <div class="partner-card__body">
+            <h2 class="partner-card__name">{{ partner.name }}</h2>
+            {% if partner.description %}
+            <p class="partner-card__description">{{ partner.description | truncatewords: 20 }}</p>
+            {% endif %}
+          </div>
+        </a>
+        {% endfor %}
+      </div>
+      {% else %}
+      <p class="partners-empty">{{ s.partners_empty }}</p>
+      {% endif %}
+    </div>
+  </section>
+</main>

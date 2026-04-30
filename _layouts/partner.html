@@ -1,0 +1,52 @@
+---
+layout: default
+---
+<main id="main-content" class="partner-detail">
+  <div class="container">
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="{{ '/partners/' | relative_url }}">Partners</a>
+      <span aria-hidden="true">›</span>
+      <span>{{ page.name }}</span>
+    </nav>
+
+    <header class="partner-header">
+      {% if page.logo %}
+      <div class="partner-header__logo">
+        <img src="{{ page.logo | relative_url }}" alt="{{ page.name }}" class="partner-logo-large">
+      </div>
+      {% endif %}
+      <div class="partner-header__info">
+        <h1 class="partner-name">{{ page.name }}</h1>
+        {% if page.website %}
+        <a href="{{ page.website }}" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+          Visit {{ page.name }} ↗
+        </a>
+        {% endif %}
+      </div>
+    </header>
+
+    <div class="partner-body">
+      {% if page.description %}
+      <section class="partner-section">
+        <h2>About</h2>
+        <p>{{ page.description }}</p>
+      </section>
+      {% endif %}
+
+      {% if page.contribution %}
+      <section class="partner-section">
+        <h2>Contribution</h2>
+        <p>{{ page.contribution }}</p>
+      </section>
+      {% endif %}
+
+      {% if content != "" %}
+      <section class="partner-section">
+        {{ content }}
+      </section>
+      {% endif %}
+    </div>
+
+  </div>
+</main>
