@@ -1,7 +1,7 @@
 ---
 name: "Uw logo hier..."
 website: "mailto:lacewing@divd.nl"
-logo: ""
+logo: "/assets/img/logos/become-a-partner.svg"
 founded: false
 nl:
   description: "Wordt partner van Project Lacewing en draag bij aan een veiligер, onafhankelijk internet — vanuit Europa, voor iedereen."

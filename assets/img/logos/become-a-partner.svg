@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 60" fill="none" aria-label="Your logo here">
+  <title>Your logo here</title>
+
+  <!-- Background -->
+  <rect width="160" height="60" rx="8" fill="#f0faf7"/>
+
+  <!-- Dashed border -->
+  <rect x="1.5" y="1.5" width="157" height="57" rx="7"
+        stroke="#4a9e8a" stroke-width="1.5" stroke-dasharray="5 3"/>
+
+  <!-- Corner crop marks -->
+  <path d="M10 17 L10 8 L19 8"
+        stroke="#4a9e8a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+  <path d="M150 17 L150 8 L141 8"
+        stroke="#4a9e8a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+  <path d="M10 43 L10 52 L19 52"
+        stroke="#4a9e8a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+  <path d="M150 43 L150 52 L141 52"
+        stroke="#4a9e8a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+
+  <!-- Soft circle backdrop -->
+  <circle cx="80" cy="30" r="15" fill="#4a9e8a" opacity="0.12"/>
+
+  <!-- Question mark (drawn as paths, no font dependency) -->
+  <!-- Arc of the ? -->
+  <path d="M74 23 C74 18, 86 18, 86 24 C86 28, 80 29, 80 34"
+        stroke="#4a9e8a" stroke-width="2.5" stroke-linecap="round" opacity="0.75" fill="none"/>
+  <!-- Dot of the ? -->
+  <circle cx="80" cy="39" r="1.6" fill="#4a9e8a" opacity="0.75"/>
+</svg>
