@@ -21,6 +21,8 @@ collections:
   partners:
     output: true
     permalink: /partner/:name/
+  projects:
+    output: false
 
 plugins:
   - jekyll-seo-tag
