@@ -7,30 +7,28 @@ title: Partners
     <div class="container">
       <p class="section-label section-label--light">Our partners</p>
       <h1>Partners</h1>
-      <p class="section-intro section-intro--light">Organisations supporting Project Lacewing with funding, hardware, people, or codebase access.</p>
+      <p class="section-intro section-intro--light">Organisations supporting Project Lacewing with funding, hardware, people, or codebase access. Listed in order of appearance.</p>
     </div>
   </section>
 
   <section class="partners-index-grid">
     <div class="container">
       {% if site.partners.size > 0 %}
-      <div class="partners-grid">
-        {% assign sorted_partners = site.partners | sort: "name" %}
+      <div class="partners-list">
+        {% assign sorted_partners = site.partners | sort: "order" %}
         {% for partner in sorted_partners %}
         <a href="{{ partner.url | relative_url }}" class="partner-card">
-          {% if partner.logo %}
           <div class="partner-card__logo">
+            {% if partner.logo %}
             <img src="{{ partner.logo | relative_url }}" alt="{{ partner.name }}">
+            {% else %}
+            <span class="partner-card__logo--placeholder">{{ partner.name | slice: 0 }}</span>
+            {% endif %}
           </div>
-          {% else %}
-          <div class="partner-card__logo partner-card__logo--placeholder">
-            <span>{{ partner.name | slice: 0 }}</span>
-          </div>
-          {% endif %}
           <div class="partner-card__body">
             <h2 class="partner-card__name">{{ partner.name }}</h2>
             {% if partner.description %}
-            <p class="partner-card__description">{{ partner.description | truncatewords: 20 }}</p>
+            <p class="partner-card__description">{{ partner.description | truncatewords: 30 }}</p>
             {% endif %}
           </div>
         </a>
