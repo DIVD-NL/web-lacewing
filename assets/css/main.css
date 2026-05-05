@@ -831,11 +831,16 @@ ul[role="list"] { list-style: none; }
    Partners
    ============================================================ */
 
-/* Listing grid */
-.partners-grid {
+/* Partner list — full-width rows */
+.section-partners .section-intro,
+.partners-index-hero .section-intro {
+  max-width: none;
+}
+
+.partners-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 1.5rem;
+  gap: 1.25rem;
   margin-top: 2rem;
 }
 
@@ -860,17 +865,17 @@ ul[role="list"] { list-style: none; }
   align-items: center;
   justify-content: center;
   padding: 1.5rem;
-  background: var(--gray-100);
+  background: var(--white);
+  border-bottom: 1px solid var(--gray-100);
   min-height: 100px;
 }
 .partner-card__logo img {
-  max-height: 60px;
+  max-height: 55px;
   max-width: 160px;
   width: auto;
   object-fit: contain;
 }
 .partner-card__logo--placeholder {
-  background: var(--teal-light);
   font-size: 2rem;
   font-weight: 700;
   color: var(--teal-dark);
@@ -878,18 +883,19 @@ ul[role="list"] { list-style: none; }
 
 .partner-card__body {
   padding: 1rem 1.25rem 1.25rem;
+  flex: 1;
 }
 .partner-card__name {
   font-size: 1rem;
   font-weight: 700;
-  margin: 0 0 .4rem;
+  margin: 0 0 .35rem;
   color: var(--navy);
 }
 .partner-card__description {
   font-size: .875rem;
   color: var(--gray-700);
   margin: 0;
-  line-height: 1.5;
+  line-height: 1.55;
 }
 
 .partners-empty {
@@ -927,7 +933,8 @@ ul[role="list"] { list-style: none; }
 }
 .partner-header__logo {
   flex-shrink: 0;
-  background: var(--gray-100);
+  background: var(--white);
+  border: 1px solid var(--gray-100);
   border-radius: 8px;
   padding: 1.25rem;
   display: flex;
