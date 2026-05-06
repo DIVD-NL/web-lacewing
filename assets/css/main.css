@@ -1070,8 +1070,9 @@ ul[role="list"] { list-style: none; }
 .post-list__link:hover .post-list__title { color: var(--teal); }
 .post-list__date {
   grid-row: 1 / 3;
-  font-size: .8rem;
-  color: var(--gray-500);
+  font-size: .85rem;
+  font-weight: 600;
+  color: var(--teal);
   white-space: nowrap;
   padding-top: .15rem;
 }

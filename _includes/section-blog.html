@@ -1,0 +1,26 @@
+{% if site.posts.size > 0 %}
+<section class="section section--offwhite" id="blog" aria-labelledby="blog-h2">
+  <div class="container">
+    <p class="section-label">Latest</p>
+    <h2 class="section-h2" id="blog-h2">Blog</h2>
+
+    <ol class="post-list" reversed>
+      {% for post in site.posts limit: 3 %}
+      <li class="post-list__item">
+        <a href="{{ post.url | relative_url }}" class="post-list__link">
+          <time class="post-list__date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B %Y" }}</time>
+          <span class="post-list__title">{{ post.title }}</span>
+          {% if post.excerpt %}
+          <span class="post-list__excerpt">{{ post.excerpt | strip_html | truncatewords: 25 }}</span>
+          {% endif %}
+        </a>
+      </li>
+      {% endfor %}
+    </ol>
+
+    <p class="blog-all-link">
+      <a href="{{ '/blog/' | relative_url }}" class="btn btn--ghost">All posts →</a>
+    </p>
+  </div>
+</section>
+{% endif %}

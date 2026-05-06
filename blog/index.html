@@ -18,7 +18,7 @@ title: Blog
         {% for post in site.posts %}
         <li class="post-list__item">
           <a href="{{ post.url | relative_url }}" class="post-list__link">
-            <time class="post-list__date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+            <time class="post-list__date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B %Y" }}</time>
             <span class="post-list__title">{{ post.title }}</span>
             {% if post.excerpt %}
             <span class="post-list__excerpt">{{ post.excerpt | strip_html | truncatewords: 25 }}</span>
