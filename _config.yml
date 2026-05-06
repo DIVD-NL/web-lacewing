@@ -1,6 +1,6 @@
 title: "Project Lacewing"
 description: "A European, open, community-driven answer to AI-driven vulnerability research. By DIVD."
-baseurl: "/web-lacewing"
+baseurl: "/"
 url: "https://divd-nl.github.io"
 
 livereload: true
