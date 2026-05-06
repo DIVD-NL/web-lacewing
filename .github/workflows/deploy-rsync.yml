@@ -26,7 +26,7 @@ jobs:
         uses: burnett01/rsync-deployments@5.2.1
         with:
           switches: -avzr --delete
-          path: ${{ vars.DEPLOY_SRC }}
+          path: _site/
           remote_path: ${{ vars.DEPLOY_DEST }}
           remote_host: ${{ vars.DEPLOY_HOST }}
           remote_user: ${{ vars.DEPLOY_USER }}
