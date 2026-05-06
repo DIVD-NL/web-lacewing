@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<main id="main-content" class="post-detail">
+  <div class="container">
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="{{ '/blog/' | relative_url }}">Blog</a>
+      <span aria-hidden="true">›</span>
+      <span>{{ page.title }}</span>
+    </nav>
+
+    <article class="post-article">
+      <header class="post-header">
+        <p class="section-label">{{ page.categories | first | default: "Update" }}</p>
+        <h1 class="post-title">{{ page.title }}</h1>
+        <p class="post-meta">
+          <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+          {% if page.author %} · <span class="post-author">{{ page.author }}</span>{% endif %}
+        </p>
+      </header>
+
+      <div class="post-body">
+        {{ content }}
+      </div>
+
+      <footer class="post-footer">
+        <a href="{{ '/blog/' | relative_url }}" class="btn btn--ghost">← Back to blog</a>
+        <a href="{{ '/feed.xml' | relative_url }}" class="post-rss-link">RSS feed</a>
+      </footer>
+    </article>
+
+  </div>
+</main>
